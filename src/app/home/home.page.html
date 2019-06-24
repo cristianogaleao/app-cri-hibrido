@@ -2,10 +2,19 @@
     <ion-toolbar >
       <ion-img class="topo" style="width: 60px; height: 60px; right: 50px " src="../assets/1.png"></ion-img>
     </ion-toolbar>
+
     <ion-item>
-      <p><ion-icon name="contacts" (click)="cadastrarLoja()" placeholder="Cadastre sua loja"></ion-icon>Cadastre sua Loja</p>
-      <p><ion-icon name="contact" (click)="logar()"  clearOnEdit="true"placeholder="Entrar"></ion-icon>Login</p>
-      <p><ion-icon name="podium" (click)="CalculeSuaIMC()" placeholder="imc"></ion-icon>IMC</p>
+      <ion-button (click)="cadastrarLoja()" placeholder="Cadastre sua loja">
+        <p><ion-icon  name="contacts"></ion-icon>Cadastre sua loja</p>
+      </ion-button>
+
+      <ion-button (click)="logar()" placeholder="Entrar">
+        <p><ion-icon  name="contact"></ion-icon>Entrar</p>
+      </ion-button>
+    
+      <ion-button (click)="CalculeSuaIMC()" placeholder="imc">
+        <p><ion-icon  name="podium"></ion-icon>IMC</p>
+      </ion-button>
     </ion-item>
     
     <ion-input *ngFor="let loja of listaPerfil">{{loja?.nome}}</ion-input>

@@ -2,15 +2,32 @@
   <ion-toolbar >
     <ion-img class="topo" style="width: 60px; height: 60px; right: 50px " src="../assets/1.png"></ion-img>
   </ion-toolbar>
-  <ion-input (click)="logoff()">Sair</ion-input>
-  <ion-input *ngIf="loja.nome!=undefined" (click)="lojaPerfil(loja)">{{loja?.nome}}</ion-input>
-  <ion-input *ngIf="loja.nome==undefined" (click)="irCadastroLoja()">Cadastre sua loja</ion-input>
 
+  <ion-item>
+    
+      <ion-row>
+          <ion-col>
+      <ion-button (click)="cadastrarLoja()" placeholder="Cadastre sua loja">
+        <p><ion-icon  name="contacts"></ion-icon>Cadastre sua loja</p>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+    <ion-row>
+      <ion-col offset="3">
+          <ion-button (click)="CalculeSuaIMC()" placeholder="imc" >
+              <p><ion-icon  name="podium"></ion-icon>IMC</p>
+            </ion-button>
+      </ion-col>
+    </ion-row>
+     
+    </ion-item>
   
 
 </ion-header>
 
 <ion-content>
+
+
 
   <ion-slides pager="true" autoplay="true" style="width: 200px; height: 200px;"  [options]="slideOpts">
     <ion-slide>
@@ -27,37 +44,29 @@
   <ion-searchbar type="Search" (change)="Pesquisa($event)"></ion-searchbar>
 
 
-  <ion-row>
-    <ion-col>
-      <ion-card>
-        <ion-img style="width: 150px; height: 150px;" src="../assets/5.jpg"></ion-img>
-        <ion-button size="small">Whey Protein</ion-button>
-      </ion-card>
-    </ion-col>
+<ion-row>
+        <ion-col>
+            <ion-img style="width: 150px; height: 150px;" src="../assets/5.jpg"></ion-img>
+            <ion-button size="small" (click)="whey()">Whey Protein</ion-button>
+        </ion-col>
+    
+        <ion-col>
+            <ion-img style="width: 150px; height: 150px;" src="../assets/6.png"></ion-img>
+            <ion-button size="small" (click)="bcaa()"> BCAA </ion-button>
+        </ion-col>
+      </ion-row>
+    
+      <ion-row>
+          <ion-col>
+              <ion-img style="width: 150px; height: 150px;" src="../assets/7.png"></ion-img>
+              <ion-button size="small" (click)="creatina()"> Creatine </ion-button>
+          </ion-col>
 
-    <ion-col>
-      <ion-card>
-        <ion-img style="width: 150px; height: 150px;" src="../assets/6.png"></ion-img>
-        <ion-button size="small"> BCAA </ion-button>
-      </ion-card>
-    </ion-col>
-  </ion-row>
-
-  <ion-row>
-      <ion-col>
-        <ion-card>
-          <ion-img style="width: 150px; height: 150px;" src="../assets/7.png"></ion-img>
-          <ion-button size="small"> Creatine </ion-button>
-        </ion-card>
-      </ion-col>
-  
-      <ion-col>
-        <ion-card>
-          <ion-img style="width: 150px; height: 150px;" src="../assets/8.jpg"></ion-img>
-          <ion-button size="small"> tribulus </ion-button>
-        </ion-card>
-      </ion-col>
-    </ion-row>
+          <ion-col>
+              <ion-img style="width: 150px; height: 150px;" src="../assets/8.jpg"></ion-img>
+              <ion-button size="small" (click)="tribulus()"> tribulus </ion-button>
+          </ion-col>
+        </ion-row>
 
       
   <ion-fab vertical="bottom" horizontal="start">

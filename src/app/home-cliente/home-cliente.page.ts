@@ -77,20 +77,26 @@ export class HomeClientePage implements OnInit {
     }
 
   cadastrarLoja(){
-  this.router.navigate(['/cadastro-de-loja']);
-  }
+    this.router.navigate(['/cadastro-de-loja']);
+    }
   
   logar(){
     this.router.navigate(['/list']);
     }
-  logoff(){
-      this.router.navigate(['/logoff']);
-      }
 
-  openFirst() {
+  logoff(){
+    this.router.navigate(['/logoff']);
+    }
+
+  CalculeSuaIMC(){
+    this.router.navigate(['/imc']);
+    }
+            
+
+  openFirst(){
     this.menu.enable(true, 'first');
     this.menu.open('first');
-  }
+    }
 
   Pesquisa(event) {
 
