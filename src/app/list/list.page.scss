@@ -1,9 +1,9 @@
 
 app-login {
-    
+
 }
 
-$white-color: #fff;
+$white-color: #aa7024;
 $height100: 100%;
 
 ion-grid {
@@ -29,8 +29,9 @@ ion-button {
     ion-grid {
         background: $white-color;
     }
-    ion-col {
+    ion-item {
         border: none;
+        color: rgb(14, 12, 12);
     }
 }
 
@@ -40,3 +41,18 @@ ion-button {
     margin-right: auto;
 
 }
+ion-content {
+    --background: none;
+    background-image: url('/assets/loga.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+h1{
+    font-size: 60px; 
+    
+     color: rgba(255,146,10,0.8);
+     text-align: center;
+}  
+
+

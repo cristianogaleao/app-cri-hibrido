@@ -23,7 +23,7 @@ export class AppComponent {
     {
       title: 'Cadastre sua Loja',
       url: '/cadastro-de-loja',
-      icon: 'add-circle-outline'
+      icon: 'contacts'
     },
     {
       title: 'Logoff',
