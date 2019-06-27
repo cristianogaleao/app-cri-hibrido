@@ -1,20 +1,14 @@
 #aviso{
-    color: rgb(57, 46, 207);
+    color: rgb(2, 2, 3);
 }
 .titulo{
     border-radius: 10px 20px;
     background-size: cover;
-    color: #0000CD;
+    color: rgb(0, 0, 0);
 }
 .fundo{
-    background-color: rgb(35, 141, 43)!important;
+    background-color: rgb(177, 105, 22)!important;
 }
-
-ion-content {
-    --background: none;
-    background-image: url('/assets/loga.jpg');
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: opacity 30px;
-  }
+ion-button{
+    color: rgb(190, 98, 11);
+}

@@ -5,3 +5,24 @@
 // file can hold Sass mixins, functions, and placeholder classes to be imported 
 // and used throughout the application.
 
+.menu-app{
+    --background: none;
+    background-image: url('/assets/loga.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: opacity 30px;
+  }
+
+  .menu-app div{
+    --background: none;
+
+  }
+
+  .menu-app ion-list{
+  }
+
+  .menu-app ion-item{
+    --background: none;
+
+  }
