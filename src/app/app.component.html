@@ -1,13 +1,10 @@
 <ion-app>
   <ion-split-pane>
+    
     <ion-menu>
-      <ion-header>
-        <ion-toolbar>
-          <ion-title>Menu</ion-title>
-        </ion-toolbar>
-      </ion-header>
+        
       <ion-content class="menu-app">
-       
+          <ion-img class="topo" style="width: 80px; height: 80px; right: 60px " src="../assets/1.png"></ion-img>
           <div auto-hide="false" *ngFor="let p of appPages">
             <p  [routerDirection]="'root'" [routerLink]="[p.url]">
               <ion-icon slot="start" [name]="p.icon"></ion-icon>
