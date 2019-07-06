@@ -5,13 +5,23 @@
 // file can hold Sass mixins, functions, and placeholder classes to be imported 
 // and used throughout the application.
 
-.menu-app{
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+  *{  font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+  }
+  
+  .menu-app{
     --background: none;
     background-image: url('/assets/loga.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     background: opacity 30px;
+  }
+
+  .topo{
+    width:30%;
+    height:30%;
   }
 
   .menu-app div{
@@ -22,7 +32,7 @@
   .menu-app ion-list{
   }
 
-  .menu-app ion-toolbar{
-    --background: none !important;
+  .menu-app ion-item{
+    --background: none;
 
   }

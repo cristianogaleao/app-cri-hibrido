@@ -1,61 +1,15 @@
 
-app-login {
 
-}
-
-$white-color: #aa7024;
-$height100: 100%;
-
-ion-grid {
-    width:100%;
-    height: $height100;
-    background: #dfdfdf;
-}
-
-
-ion-row {
-    height: $height100;
-}
-
-ion-col {
-    border: 1px solid #c78813;
-    background: $white-color;
-}
-
-ion-button {
-    font-weight: 300;
-}
-
-@media (min-width: 240px) and (max-width: 768px) {
-    ion-grid {
-        background: $white-color;
-    }
-    ion-item {
-        border: none;
-        color: rgb(14, 12, 12);
-    }
-}
-
-.login{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-ion-content {
-    --background: none;
-    background-image: url('/assets/loga.jpg');
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-  }
 h1{
-    font-size: 60px; 
-    
-     color: rgba(255, 255, 255, 0.8);
-     text-align: center;
+    text-shadow: 3px 3px 0px #fff, 5px 5px 0px rgba(0,0,0,0.15); 
+
 }  
+.imga {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
 
 
 

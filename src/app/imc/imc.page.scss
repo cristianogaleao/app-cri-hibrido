@@ -1,7 +1,8 @@
 #aviso{
     color: rgb(2, 2, 3);
 }
-.titulo{
+h1{
+    font-style: italic;
     border-radius: 10px 20px;
     background-size: cover;
     color: rgb(0, 0, 0);
@@ -10,5 +11,10 @@
     background-color: rgb(177, 105, 22)!important;
 }
 ion-button{
-    color: rgb(190, 98, 11);
+    color: rgb(255, 255, 255);
 }
+
+ion-content{
+    font-style: italic;
+}
+

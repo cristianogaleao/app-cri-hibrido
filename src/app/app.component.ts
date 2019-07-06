@@ -13,28 +13,22 @@ import { AngularFireAuth } from '@angular/fire/auth';
 })
 export class AppComponent {
   public appPages = [
-
+   
     {
-      title: 'Home',
-      url: '/home-cliente',
-      icon: 'home'
-    },
-
-    {
-      title: 'Cadastre sua Loja',
-      url: '/cadastro-de-loja',
-      icon: 'contacts'
+      title: 'IMC',
+      url: '/imc',
+      icon: 'stats'
     },
     {
-      title: 'Logoff',
-      url: '/logoff',
-      icon: 'walk'
+      title: 'teste',
+      url: '/teste',
+      icon: 'stats'
     },
 
     
   
-  
   ];
+  
 
   constructor(
     private platform: Platform,

@@ -1,16 +1,26 @@
 
 
-
+<ion-header>
+      
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="home"></ion-back-button>
+          
+        </ion-buttons>
+        <ion-buttons slot="secondary">
+          <ion-button (click)="logoff()" placeholder="Logar">
+            <ion-icon color="danger" slot="icon-only" name="log-out"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-title style="text-align:center;font-size:25px;"> Cadastro de Loja </ion-title>
+      </ion-toolbar>
+</ion-header>
 
 <ion-content  color="red">
     <form  [formGroup]="formGroup">
       <ion-grid>
         <ion-row color="red	" justify-content-center>
           <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
-            <div text-center>
-              <ion-back-button defaultHref="home-cliente"></ion-back-button>
-              <h2>Cadastro de Loja</h2>
-            </div>
             <div padding>
               <ion-item>
                 <ion-input  formControlName="nome" type="text" placeholder="Nome" ></ion-input>
@@ -21,10 +31,6 @@
               <ion-item>
                 <ion-input formControlName="email" type="email" placeholder="your@email.com" ></ion-input>
               </ion-item>
-              <ion-item>
-                  <ion-input formControlName="senha" type="password" placeholder="Senha" ></ion-input>
-                </ion-item>
-              <ion-item>
                 <ion-input formControlName="cnpj" type="text" placeholder="CNPJ" ></ion-input>
               </ion-item>
             </div>
@@ -35,4 +41,10 @@
         </ion-row>
       </ion-grid>
     </form>
+
+
+
+
+      
+ 
   </ion-content>

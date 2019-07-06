@@ -1,57 +1,69 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Cadastrdo De Produto</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
-    <img src="{{imagem}}">
-
-    <ion-item>
-        <input type="file" (change)="enviaArquivo($event)"/>
-    </ion-item>
-    
- <form [formGroup]="formGroup">
-
-    <ion-list>
-      <ion-item>
-        <ion-label floating>Nome</ion-label>
-        <ion-input formControlName="nome" type="text"></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label floating>Marca</ion-label>
-        <ion-input formControlName="marca" type="text"></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label floating>Informação</ion-label>
-        <ion-input formControlName="informacao" type="text"></ion-input>
-      </ion-item>
       
-      <ion-item>
-        <ion-label floating>Codigo</ion-label>
-        <ion-input formControlName="codigo" type="text"></ion-input>
-      </ion-item>
-    
-      <ion-item>
-        <ion-label floating>Preço</ion-label>
-        <ion-input formControlName="preco" type="text" ></ion-input>
-      </ion-item>
-    
-      <ion-item>
-        <ion-label>Categoria</ion-label>
-        <ion-select value="brown" okText="Continuar" cancelText="Cancelar"  formControlName="categoria" >
-                                              //cancelText="Cancela"
-          <ion-select-option *ngFor="let cat of listaCategoria" value="{{cat.nome}}">{{cat.nome}}</ion-select-option>
-
-        </ion-select>
-      </ion-item>
-    
-    </ion-list>
-
-    <ion-button expand="full" (click)="cadastrar()">Cadastrar Produto</ion-button>
-  </form>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="home"></ion-back-button>
+          
+        </ion-buttons>
+        <ion-buttons slot="secondary">
+          <ion-button (click)="logoff()" placeholder="Logar">
+            <ion-icon color="danger" slot="icon-only" name="log-out"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-title style="text-align:center;font-size:25px;">SHAPE MIN.</ion-title>
+      </ion-toolbar>
+</ion-header>
   
-</ion-content>
+  <ion-content>
+  
+      
+   <form [formGroup]="formGroup">
+  
+      <ion-list>
+        <ion-item>
+          <ion-label floating>Nome</ion-label>
+          <ion-input formControlName="nome" type="text"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label floating>Marca</ion-label>
+          <ion-input formControlName="marca" type="text"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label floating>Informação</ion-label>
+          <ion-input formControlName="informacao" type="text"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label floating>Codigo</ion-label>
+          <ion-input formControlName="codigo" type="text"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>Preço</ion-label>
+          <ion-input formControlName="preco" type="text" ></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>Categoria</ion-label>
+          <ion-select value="brown" okText="Continuar" cancelText="Cancelar"  formControlName="categoria" >
+                                                //cancelText="Cancela"
+            <ion-select-option *ngFor="let cat of listaCategoria" value="{{cat.nome}}">{{cat.nome}}</ion-select-option>
+  
+          </ion-select>
+        </ion-item>
+  
+        <ion-item>
+          <ion-icon name="images"></ion-icon>
+          <input type="file" (change)="pegarImagem($event)" />
+        </ion-item>
+        <img src="{{foto}}" >
+  
+      </ion-list>
+  
+    
+      <ion-button expand="full" (click)="cadastrar()">Cadastre seu produto</ion-button>
+    </form>
+    
+  </ion-content>

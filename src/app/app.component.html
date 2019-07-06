@@ -1,19 +1,20 @@
 <ion-app>
   <ion-split-pane>
-    
     <ion-menu>
-        
-      <ion-content class="menu-app">
-          <ion-img class="topo" style="width: 80px; height: 80px; right: 60px " src="../assets/1.png"></ion-img>
-          <div auto-hide="false" *ngFor="let p of appPages">
-            <p  [routerDirection]="'root'" [routerLink]="[p.url]">
-              <ion-icon slot="start" [name]="p.icon"></ion-icon>
-              <ion-label>
-                {{p.title}}
-              </ion-label>
-            </p>
-          </div>
+      <ion-header>
       
+      </ion-header>
+      <ion-content class="menu-app">
+          <ion-img class="topo" style="width: 10px; height: 10px; right: 10px " src="../assets/1.png" style="text-align:center;"></ion-img>
+
+       
+        <div auto-hide="false" *ngFor="let p of appPages">
+
+        <ion-item [routerDirection]="'root'" [routerLink]="[p.url]"  ><ion-icon  [name]="p.icon"></ion-icon> {{p.title}}</ion-item>
+      
+        </div>    
+
+
       </ion-content>
     </ion-menu>
     <ion-router-outlet main></ion-router-outlet>

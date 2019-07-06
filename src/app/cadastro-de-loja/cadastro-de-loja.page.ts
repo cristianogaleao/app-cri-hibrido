@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
-import { LoadingController, ToastController } from '@ionic/angular';
+import { LoadingController, ToastController, ModalController, AlertController } from '@ionic/angular';
 import * as firebase from 'firebase';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Loja } from '../model/loja';
@@ -30,7 +30,9 @@ export class CadastroDeLojaPage implements OnInit {
               public router: Router,
               public loadingController: LoadingController,
               public toastController: ToastController,
-              public fire: AngularFireAuth) {
+              public fire: AngularFireAuth,
+
+) {
     
 
                 this.fire.authState.subscribe(obj=>{
@@ -52,6 +54,9 @@ export class CadastroDeLojaPage implements OnInit {
 
    
   }
+
+  
+
 
   cadastrar(){
     this.loading();

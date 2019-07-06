@@ -1,26 +1,50 @@
-
-  
+<ion-header>
+        
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>  
+    </ion-toolbar>
+    
+</ion-header>
   <ion-content padding>
-    <img class="login" src="../assets/1.png">
+    
 
-    <h1>SHAPE MIN</h1>
+    <ion-row style="margin-bottom:30px;margin-top:30px;">
+      <ion-col offset="3">
+          <img class="login" class="imga" src="../assets/1.png">
+      </ion-col>
+    </ion-row>
 
-  
-    <ion-item color="gold">
-      <ion-label position="floating">E-mail</ion-label>
+
+
+    <ion-row style="text-align:center;">
+      <ion-col>
+        <div>
+          <h1 >SHAPE MIN &copy;</h1>
+        </div>
+      </ion-col>
+    </ion-row>
+
+     <ion-item >
+      <ion-label position="floating">E-mail:</ion-label>
       <ion-input #email></ion-input>
     </ion-item>
-  
-    <ion-item color="gold">
-        <ion-label position="floating">Senha</ion-label>
+
+    <ion-item style="margin-bottom:50px;" >
+        <ion-label position="floating">Senha:</ion-label>
         <ion-input type="password" #senha></ion-input>
-      </ion-item>
-      
-      <ion-button color="gold" expand="full" (click)="logar()">Logar</ion-button>
-      <ion-button color="gold"expand="full" (click)="cadastrar()">Cadastrar</ion-button>
+    </ion-item>
+    
+    <ion-button size="large" color="dark"  expand="block" (click)="logar()" >Logar <ion-icon name="log-in"></ion-icon></ion-button>
+    <ion-button size="large" color="dark"   expand="block" (click)="cadastrar()">Cadastrar-se <ion-icon name="add-circle" ></ion-icon></ion-button>
+   
 
  
     </ion-content>
+
+
+
 
 
 

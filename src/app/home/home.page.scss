@@ -1,18 +1,59 @@
 
-.topo{
-  position: fixed;
-  left: 42%;
-  top: 0%;
-}
 
-ion-content {
-  --background: none;
-  background-image: url('/assets/10.jpg');
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background: opacity 30px;
-  transition: width 5s;
 
-}
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+  }
+  @-moz-keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+  }
+  @-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+  @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
 
+  *{
+    @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 15px;
+    
+  }
+
+  .centralizarTexto{
+    text-align:center;
+  }
+  
+  .botao{
+    color: #000;
+  }
+
+
+  .fadeIn {
+    -webkit-animation: fadeIn 2s ease-in-out;
+    -moz-animation: fadeIn 2s ease-in-out;
+    -o-animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
+    }
+
+
+  .hr {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    width: 100%;
+    }
+
+
+    .conteudo{
+      width: 100%;
+      padding: 10px;
+      border-bottom: solid 1px gray;
+      border-left: solid 1px gray;
+      border-right: solid 1px gray;
+
+    }

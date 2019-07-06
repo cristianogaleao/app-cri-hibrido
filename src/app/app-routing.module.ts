@@ -51,7 +51,9 @@ const routes: Routes = [
 
   { path: 'carrinho', loadChildren: './carrinho/carrinho.module#CarrinhoPageModule' },
 
-  { path: 'imc', loadChildren: './imc/imc.module#ImcPageModule' }
+  { path: 'imc', loadChildren: './imc/imc.module#ImcPageModule' },  { path: 'teste', loadChildren: './teste/teste.module#TestePageModule' },
+  { path: 'cadastro-de-loja-logado', loadChildren: './cadastro-de-loja-logado/cadastro-de-loja-logado.module#CadastroDeLojaLogadoPageModule' }
+
 
 
 ];
